@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import MButton from './MButton';
+import Button_modification from './Button.component';
 
-const meta: Meta<typeof MButton> = {
+const meta: Meta<typeof Button_modification> = {
 	title: 'UI/Button',
-	component: MButton,
+	component: Button_modification,
 	argTypes: {
 		variant: {
 			type: 'string',
@@ -24,16 +24,40 @@ const meta: Meta<typeof MButton> = {
 				type: 'radio',
 			},
 		},
+		size: {
+			type: 'string',
+			description: 'Размер кнопки',
+			defaultValue: 'medium',
+			options: ['small', 'medium', 'large'],
+			control: {
+				type: 'radio',
+			},
+		},
+		href: {
+			type: 'string',
+			description: 'Ссылка на страницу',
+			defaultValue: '',
+		},
 	},
 };
 
 export default meta;
-type Story = StoryObj<typeof MButton>;
+type Story = StoryObj<typeof Button_modification>;
 
 export const Default: Story = {
 	args: {
 		children: 'Chill me',
 		variant: 'outlined',
 		color: 'blue',
+		size: 'medium',
+	},
+};
+
+export const Link: Story = {
+	args: {
+		children: 'Link me',
+		variant: 'contained',
+		color: 'blue',
+		size: 'small',
 	},
 };

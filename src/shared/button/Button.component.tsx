@@ -1,14 +1,14 @@
 import Button from '@mui/material/Button';
 import { FC, PropsWithChildren } from 'react';
 
-type PropsButton = {
+export interface IButton extends PropsWithChildren {
 	variant: 'contained' | 'text' | 'outlined';
 	color: 'blue' | 'green';
-};
+	href?: string;
+	size: 'small' | 'medium' | 'large';
+}
 
-export interface IButton extends PropsWithChildren, PropsButton {}
-
-const MButton: FC<IButton> = ({ children, variant, color }) => {
+const Button_modification: FC<IButton> = ({ children, variant, color, href, size }) => {
 	return (
 		<Button
 			variant={variant}
@@ -18,10 +18,12 @@ const MButton: FC<IButton> = ({ children, variant, color }) => {
 				backgroundColor: variant === 'contained' ? color : '',
 				':hover': color,
 			}}
+			href={href}
+			size={size}
 		>
 			{children}
 		</Button>
 	);
 };
 
-export default MButton;
+export default Button_modification;
