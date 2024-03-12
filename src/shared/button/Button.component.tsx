@@ -8,7 +8,7 @@ export interface IButton extends PropsWithChildren {
 	size: 'small' | 'medium' | 'large';
 }
 
-const Button_modification: FC<IButton> = ({ children, variant, color, href, size }) => {
+const Button_modified: FC<IButton> = ({ children, variant, color, href, size }) => {
 	return (
 		<Button
 			variant={variant}
@@ -26,4 +26,4 @@ const Button_modification: FC<IButton> = ({ children, variant, color, href, size
 	);
 };
 
-export default Button_modification;
+export default Button_modified;

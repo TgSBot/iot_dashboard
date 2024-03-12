@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Button_modification from './Button.component';
+import Button_modified from './Button.component';
 
-const meta: Meta<typeof Button_modification> = {
+const meta: Meta<typeof Button_modified> = {
 	title: 'UI/Button',
-	component: Button_modification,
+	component: Button_modified,
 	argTypes: {
 		variant: {
 			type: 'string',
@@ -42,7 +42,7 @@ const meta: Meta<typeof Button_modification> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Button_modification>;
+type Story = StoryObj<typeof Button_modified>;
 
 export const Default: Story = {
 	args: {
