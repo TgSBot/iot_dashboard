@@ -18,8 +18,8 @@ type ButtonBaseProps = Pick<
 
 export interface IButton extends PropsWithChildren, ButtonBaseProps {}
 
-const Button_modified: FC<IButton> = ({ children, ...args }) => {
+const ButtonModified: FC<IButton> = ({ children, ...args }) => {
 	return <Button {...args}>{children}</Button>;
 };
 
-export default Button_modified;
+export default ButtonModified;

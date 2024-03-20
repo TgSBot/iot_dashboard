@@ -1,11 +1,11 @@
 import { ArrowForwardIos, Delete } from '@mui/icons-material';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Button_Icon from './Button_Icon.component';
+import ButtonIcon from './Button_Icon.component';
 
-const meta: Meta<typeof Button_Icon> = {
+const meta: Meta<typeof ButtonIcon> = {
 	title: 'UI/Button/Button_Icon',
-	component: Button_Icon,
+	component: ButtonIcon,
 	argTypes: {
 		children: {
 			type: 'function',
@@ -21,7 +21,7 @@ const meta: Meta<typeof Button_Icon> = {
 		},
 		color: {
 			type: 'string',
-			description: 'Изменение цвета кнопки',
+			description: 'Изменение цвета',
 			defaultValue: 'inherit',
 			options: ['inherit', 'primary', 'secondary', 'success', 'error', 'info', 'warning'],
 			control: {
@@ -45,7 +45,7 @@ const meta: Meta<typeof Button_Icon> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Button_Icon>;
+type Story = StoryObj<typeof ButtonIcon>;
 
 export const Default: Story = {
 	args: {

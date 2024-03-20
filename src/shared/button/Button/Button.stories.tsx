@@ -1,11 +1,11 @@
 import { CloudUpload } from '@mui/icons-material';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Button_modified from './Button.component';
+import ButtonModified from './Button.component';
 
-const meta: Meta<typeof Button_modified> = {
+const meta: Meta<typeof ButtonModified> = {
 	title: 'UI/Button/Button',
-	component: Button_modified,
+	component: ButtonModified,
 	argTypes: {
 		children: {
 			type: 'string',
@@ -39,7 +39,7 @@ const meta: Meta<typeof Button_modified> = {
 		},
 		color: {
 			type: 'string',
-			description: 'Изменение цвета кнопки',
+			description: 'Изменение цвета',
 			defaultValue: 'inherit',
 			options: ['inherit', 'primary', 'secondary', 'success', 'error', 'info', 'warning'],
 			control: {
@@ -83,7 +83,7 @@ const meta: Meta<typeof Button_modified> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Button_modified>;
+type Story = StoryObj<typeof ButtonModified>;
 
 export const Default: Story = {
 	args: {
