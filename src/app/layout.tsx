@@ -1,3 +1,5 @@
+import { CssBaseline } from '@mui/material';
+
 export const metadata = {
 	title: 'iot_dashboard',
 	description: 'iot-dashboard by IOT-UKRTB college',
@@ -6,7 +8,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="ru">
-			<body>{children}</body>
+			<body>
+				<CssBaseline />
+				{children}
+			</body>
 		</html>
 	);
 }

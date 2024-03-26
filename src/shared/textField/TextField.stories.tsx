@@ -134,6 +134,7 @@ export const Default: Story = {
 		placeholder: 'Вводи сюда',
 		color: 'primary',
 		label: 'Primary',
+		type: 'text',
 	},
 };
 

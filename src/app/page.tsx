@@ -1,5 +1,11 @@
+import Header from '@/features/header/Header.component';
+
 const page = () => {
-	return <></>;
+	return (
+		<>
+			<Header />
+		</>
+	);
 };
 
 export default page;
