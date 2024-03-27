@@ -1,4 +1,3 @@
-import { red } from '@mui/material/colors';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import BoxModified from './Box.component';
